@@ -165,8 +165,8 @@ if { $opt7 == $nres } {
 
 close $f
 
-exec tclsh mg_mg_dis.tcl
-exec tclsh cluster_vis_pbc.tcl
+exec tclsh mg_mg_dis.tcl | tee log1
+exec tclsh cluster_vis_pbc.tcl | tee log2
 
 puts ""
 puts ""
